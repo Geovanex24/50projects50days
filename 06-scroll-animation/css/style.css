@@ -45,20 +45,15 @@ h2 {
 
   /* Oculta los elementos inicialmente */
   opacity: 0;
-  transform: translateX(400%);
+  transform: translateX(200%);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-200%);
 }
 
 .box.show {
   transform: translateX(0);
   opacity: 1;
-}
-
-/* Nueva regla para quitar la visibilidad pero solo después de la animación */
-.box:not(.show) {
-  transition: transform 0.4s ease, opacity 0.4s ease;
 }
